@@ -1,175 +1,281 @@
-# Azure AI Agent Framework - Tutorials# Microsoft Agent Framework - Progressive Tutorial Series
+# Microsoft Agent Framework Workshop# Microsoft Agent Framework Workshop
 
 
 
-Comprehensive learning path for building AI agents using Microsoft's Azure AI Agent Framework (`azure-ai-agent-framework`).## 🎯 Learning Path: Personal Travel Assistant
+Comprehensive hands-on workshop for building AI agents using Microsoft's Agent Framework. This repository contains progressive tutorials covering everything from basic agent creation to advanced multi-agent workflows and production monitoring.Comprehensive hands-on workshop for building AI agents using Microsoft's Agent Framework. This repository contains progressive tutorials covering everything from basic agent creation to advanced multi-agent workflows and production monitoring.
 
 
 
-## 📚 Learning PathThis tutorial series teaches you Microsoft Agent Framework by building a **Personal Travel Assistant** that grows in capability with each lesson. You'll learn all major features through hands-on, practical examples.
+## Tutorial Series## Tutorial Series
 
 
 
-This repository contains hands-on tutorials covering everything from basic agent creation to advanced multi-agent workflows.### 📚 Tutorial Structure
+| # | Tutorial | Topics Covered | Duration || # | Tutorial | Topics Covered | Duration |
+
+|---|----------|----------------|----------||---|----------|----------------|----------|
+
+| 01 | [Basic Agent](./01_basic_agent.ipynb) | Agent creation, responses, OpenAI setup | 15 min || 01 | [Basic Agent](./01_basic_agent.ipynb) | Agent creation, responses, OpenAI setup | 15 min |
+
+| 01b | [Azure AI Foundry](./01b_azure_ai_foundry.ipynb) | Azure deployment, model endpoints | 20 min || 01b | [Azure AI Foundry](./01b_azure_ai_foundry.ipynb) | Azure deployment, model endpoints | 20 min |
+
+| 02 | [Agent with Tools](./02_agent_with_tools.ipynb) | Function calling, tool integration | 25 min || 02 | [Agent with Tools](./02_agent_with_tools.ipynb) | Function calling, tool integration | 25 min |
+
+| 03 | [Multi-turn Conversations](./03_multi_turn_conversations.ipynb) | Context management, conversation flow | 30 min || 03 | [Multi-turn Conversations](./03_multi_turn_conversations.ipynb) | Context management, conversation flow | 30 min |
+
+| 04 | [Context & Memory](./04_context_and_memory.ipynb) | Memory systems, retrieval patterns | 35 min || 04 | [Context & Memory](./04_context_and_memory.ipynb) | Memory systems, retrieval patterns | 35 min |
+
+| 05 | [Middleware & Filters](./05_middleware_and_filters.ipynb) | Request/response pipelines, telemetry | 30 min || 05 | [Middleware & Filters](./05_middleware_and_filters.ipynb) | Request/response pipelines, telemetry | 30 min |
+
+| 06 | [Multi-Agent Workflows](./06_multi_agent_workflows.ipynb) | Agent collaboration, orchestration | 40 min || 06 | [Multi-Agent Workflows](./06_multi_agent_workflows.ipynb) | Agent collaboration, orchestration | 40 min |
+
+| 07 | [Advanced Workflows](./07_advanced_workflows.ipynb) | Complex patterns, state management | 45 min || 07 | [Advanced Workflows](./07_advanced_workflows.ipynb) | Complex patterns, state management | 45 min |
+
+| 08 | [Human-in-the-Loop](./08_human_in_the_loop.ipynb) | Approval workflows, feedback loops | 30 min || 08 | [Human-in-the-Loop](./08_human_in_the_loop.ipynb) | Approval workflows, feedback loops | 30 min |
+
+| 09 | [Error Handling](./09_error_handling_recovery.ipynb) | Retry logic, fault tolerance | 25 min || 09 | [Error Handling](./09_error_handling_recovery.ipynb) | Retry logic, fault tolerance | 25 min |
+
+| 10 | [Azure File Search](./10_azure_file_search_demo.ipynb) | Vector search, RAG patterns | 35 min || 10 | [Azure File Search](./10_azure_file_search_demo.ipynb) | Vector search, RAG patterns | 35 min |
+
+| 10b | [Competitive Intelligence](./10_competitive_intelligence_workflow.ipynb) | Multi-agent workflow, document analysis | 45 min || 10b | [Competitive Intelligence](./10_competitive_intelligence_workflow.ipynb) | Multi-agent workflow, document analysis | 45 min |
+
+| 11 | [DevUI Integration](./11_devui_competitive_intelligence.ipynb) | Development UI, testing workflows | 20 min || 11 | [DevUI Integration](./11_devui_competitive_intelligence.ipynb) | Development UI, testing workflows | 20 min |
+
+| 12 | [Azure Monitor Integration](./12_azure_monitor_alerts.ipynb) | Monitoring, alerting, Log Analytics | 40 min || 12 | [Azure Monitor Integration](./12_azure_monitor_alerts.ipynb) | Monitoring, alerting, Log Analytics | 40 min |
+
+| 13 | [Multi-Agent Pricing Analysis](./13_Pricing-Competitive-Intelligence-multiagent.ipynb) | Advanced orchestration, pricing intelligence | 50 min || 13 | [Multi-Agent Pricing Analysis](./13_Pricing-Competitive-Intelligence-multiagent.ipynb) | Advanced orchestration, pricing intelligence | 50 min |
+
+| 14 | [Unified Web App Monitoring](./14_unified_webapp_agent_monitoring.ipynb) | Log correlation, unified dashboards | 35 min || 14 | [Unified Web App Monitoring](./14_unified_webapp_agent_monitoring.ipynb) | Log correlation, unified dashboards | 35 min |
 
 
 
-### Getting StartedEach notebook builds on the previous one, introducing new concepts while enhancing our Travel Assistant:
-
-1. **[START_HERE.md](./START_HERE.md)** - Setup guide and prerequisites
-
-2. **[QUICKSTART.md](./QUICKSTART.md)** - Quick 5-minute agent#### **Level 1: Foundations** (Notebooks 01-03)
-
-3. **[LEARNING_PATH.md](./LEARNING_PATH.md)** - Structured curriculum- **01_basic_agent.ipynb** - Your first agent: Simple travel recommendations
-
-- **01b_azure_ai_foundry.ipynb** - Azure AI Foundry: Enterprise-ready agents
-
-### Tutorial Series- **02_agent_with_tools.ipynb** - Add function calling: Weather, currency converter
-
-- **03_multi_turn_conversations.ipynb** - Stateful conversations with threads
-
-| # | Tutorial | Topics Covered | Duration |
-
-|---|----------|----------------|----------|#### **Level 2: Intermediate** (Notebooks 04-06)
-
-| 01 | [Basic Agent](./01_basic_agent.ipynb) | Agent creation, responses, OpenAI setup | 15 min |- **04_context_and_memory.ipynb** - Add memory: Remember user preferences
-
-| 01b | [Azure AI Foundry](./01b_azure_ai_foundry.ipynb) | Azure deployment, model endpoints | 20 min |- **05_middleware_and_filters.ipynb** - Add safety: Content filtering, logging
-
-| 02 | [Agent with Tools](./02_agent_with_tools.ipynb) | Function calling, tool integration | 25 min |- **06_multimodal_input.ipynb** - Process images: Landmark identification
-
-| 03 | [Multi-turn Conversations](./03_multi_turn_conversations.ipynb) | Context management, conversation flow | 30 min |
-
-| 04 | [Context & Memory](./04_context_and_memory.ipynb) | Memory systems, retrieval patterns | 35 min |#### **Level 3: Advanced** (Notebooks 07-09)
-
-| 05 | [Middleware & Filters](./05_middleware_and_filters.ipynb) | Request/response pipelines, telemetry | 30 min |- **07_basic_workflows.ipynb** - Multi-step planning: Itinerary creation
-
-| 06 | [Multi-Agent Workflows](./06_multi_agent_workflows.ipynb) | Agent collaboration, orchestration | 40 min |- **08_multi_agent_orchestration.ipynb** - Agent collaboration: Research + Planning + Booking
-
-| 07 | [Advanced Workflows](./07_advanced_workflows.ipynb) | Complex patterns, state management | 45 min |- **09_human_in_the_loop.ipynb** - Approval flows: Budget and booking confirmations
-
-| 08 | [Human-in-the-Loop](./08_human_in_the_loop.ipynb) | Approval workflows, feedback loops | 30 min |
-
-| 09 | [Error Handling](./09_error_handling_recovery.ipynb) | Retry logic, fault tolerance | 25 min |#### **Level 4: Production** (Notebooks 10-12)
-
-| 10 | [Azure File Search](./10_azure_file_search_demo.ipynb) | Vector search, RAG patterns | 35 min |- **10_checkpointing_and_state.ipynb** - Long-running workflows: Resume interrupted bookings
-
-- **11_observability.ipynb** - Monitoring: Telemetry, tracing, debugging
-
-**Total Learning Time**: ~5 hours- **12_deployment_patterns.ipynb** - Production: Azure deployment, scaling, best practices
+**Total Learning Time**: ~7 hours**Total Learning Time**: ~7 hours
 
 
 
-### Special Topics### 🚀 Getting Started
-
-- **[OPENAI_VS_AZURE.md](./OPENAI_VS_AZURE.md)** - Choosing between OpenAI and Azure OpenAI
-
-- **[launch_devui.py](./launch_devui.py)** - Development UI for testing agents1. **Install the framework:**
-
-   ```bash
-
-## 🚀 Quick Start   pip install agent-framework
-
-   ```
-
-### Prerequisites
-
-- Python 3.11+2. **Set up your API keys** (create `.env` file):
-
-- Azure subscription (for Azure AI Foundry tutorials)   ```bash
-
-- OpenAI API key or Azure OpenAI endpoint   OPENAI_API_KEY=sk-...
-
-   OPENAI_CHAT_MODEL_ID=gpt-4
-
-### Setup   ```
+## Getting Started
 
 
 
-```bash3. **Start with Notebook 01** and progress sequentially!
+### Prerequisites### Special Topics### 🚀 Getting Started
+
+
+
+- Python 3.11+- **[OPENAI_VS_AZURE.md](./OPENAI_VS_AZURE.md)** - Choosing between OpenAI and Azure OpenAI
+
+- Azure subscription (for Azure AI Foundry tutorials)
+
+- OpenAI API key or Azure OpenAI endpoint- **[launch_devui.py](./launch_devui.py)** - Development UI for testing agents1. **Install the framework:**
+
+
+
+### Setup   ```bash
+
+
+
+```bash## 🚀 Quick Start   pip install agent-framework
 
 # Clone the repository
 
-git clone <your-repo-url>### 📖 What You'll Build
+git clone https://github.com/gokoner/microsoft-agent-framework-workshop.git   ```
+
+cd microsoft-agent-framework-workshop
+
+### Prerequisites
+
+# Create virtual environment
+
+python -m venv venv- Python 3.11+2. **Set up your API keys** (create `.env` file):
+
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+- Azure subscription (for Azure AI Foundry tutorials)   ```bash
+
+# Install dependencies
+
+pip install azure-ai-projects azure-identity python-dotenv openai mem0ai plotly- OpenAI API key or Azure OpenAI endpoint   OPENAI_API_KEY=sk-...
+
+
+
+# Copy environment template   OPENAI_CHAT_MODEL_ID=gpt-4
+
+cp .env.example .env  # Edit with your API keys
+
+```### Setup   ```
+
+
+
+### Environment Configuration
+
+
+
+Create a `.env` file with the following variables:```bash3. **Start with Notebook 01** and progress sequentially!
+
+
+
+```bash# Clone the repository
+
+# OpenAI Configuration
+
+OPENAI_API_KEY=sk-...git clone <your-repo-url>### 📖 What You'll Build
+
+OPENAI_CHAT_MODEL_ID=gpt-4
 
 cd agent-framework-tutorials
 
-By the end, you'll have a production-ready Travel Assistant that can:
+# Azure AI Foundry Configuration (for Azure tutorials)
 
-# Create virtual environment- ✈️ Research destinations and provide recommendations
+AZURE_OPENAI_ENDPOINT=https://...By the end, you'll have a production-ready Travel Assistant that can:
 
-python -m venv venv- 🌤️ Check weather and local conditions
+AZURE_OPENAI_API_KEY=...
 
-source venv/bin/activate  # On Windows: venv\Scripts\activate- 💱 Convert currencies and estimate costs
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4# Create virtual environment- ✈️ Research destinations and provide recommendations
+
+
+
+# Azure Monitor Configuration (for monitoring tutorials)python -m venv venv- 🌤️ Check weather and local conditions
+
+WORKSPACE_ID=...
+
+WORKSPACE_NAME=...source venv/bin/activate  # On Windows: venv\Scripts\activate- 💱 Convert currencies and estimate costs
+
+```
 
 - 📅 Create detailed itineraries
 
+### Run Your First Agent
+
 # Install dependencies- 🏨 Search for accommodations (simulated)
 
-pip install azure-ai-agent-framework python-dotenv- 👥 Coordinate multiple specialized agents
+```bash
+
+jupyter notebook 01_basic_agent.ipynbpip install azure-ai-agent-framework python-dotenv- 👥 Coordinate multiple specialized agents
+
+```
 
 - ✅ Request human approval for bookings
 
+## Documentation
+
 # Copy environment template- 💾 Save and resume long planning sessions
 
-cp .env.example .env  # Edit with your API keys- 📊 Monitor performance and debug issues
+- [Official Documentation](https://learn.microsoft.com/en-us/azure/ai-services/agents/)
+
+- [API Reference](https://learn.microsoft.com/python/api/overview/azure/ai-projects)cp .env.example .env  # Edit with your API keys- 📊 Monitor performance and debug issues
+
+- [GitHub Repository](https://github.com/microsoft/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-projects)
 
 ```- 🚀 Deploy to production on Azure
 
-
-
-### Run Your First Agent### 💡 Learning Philosophy
+## Special Topics
 
 
 
-```bash- **Progressive Enhancement**: Each notebook adds 1-2 new concepts
+- [OPENAI_VS_AZURE.md](./OPENAI_VS_AZURE.md) - Choosing between OpenAI and Azure OpenAI
 
-jupyter notebook 01_basic_agent.ipynb- **Real Use Case**: Everything ties back to the Travel Assistant
+- [START_HERE.md](./START_HERE.md) - Detailed setup guide### Run Your First Agent### 💡 Learning Philosophy
 
-```- **Runnable Code**: Every cell is executable and well-documented
+- [LEARNING_PATH.md](./LEARNING_PATH.md) - Structured curriculum
 
-- **Best Practices**: Learn the right patterns from the start
+- [launch_devui.py](./launch_devui.py) - Development UI for testing agents
 
-## 📖 Documentation
 
-### 🔗 Additional Resources
 
-- **Azure AI Agent Framework**: [Official Docs](https://learn.microsoft.com/azure/ai-services/agents/)
+## Azure Resources Included```bash- **Progressive Enhancement**: Each notebook adds 1-2 new concepts
 
-- **API Reference**: [Python SDK](https://learn.microsoft.com/python/api/overview/azure/ai-agent-framework)- [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/)
 
-- **Samples**: [GitHub Examples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agent-framework)- [GitHub Repository](https://github.com/microsoft/agent-framework)
 
-- [More Samples](../agent-framework/python/samples/)
+### Azure Workbooksjupyter notebook 01_basic_agent.ipynb- **Real Use Case**: Everything ties back to the Travel Assistant
 
-## 🎯 Real-World Applications
+- **ai_agent_monitoring_workbook_openai_style.json** - Production-ready Azure Monitor workbook with:
 
----
+  - Service health overview```- **Runnable Code**: Every cell is executable and well-documented
 
-After completing these tutorials, check out the **[Competitive Intelligence Project](https://github.com/gkoneru/microsoft-agent-framework-samples)** for a production example using:
+  - Performance trends
+
+  - Cost and usage insights- **Best Practices**: Learn the right patterns from the start
+
+  - Error correlation
+
+  - Built-in monitoring guide## 📖 Documentation
+
+
+
+### Sample Data### 🔗 Additional Resources
+
+- **sample_data/competitive_analysis/** - Example data for pricing intelligence workflows
+
+  - Input PDF documents- **Azure AI Agent Framework**: [Official Docs](https://learn.microsoft.com/azure/ai-services/agents/)
+
+  - Extracted product data
+
+  - Generated analysis reports- **API Reference**: [Python SDK](https://learn.microsoft.com/python/api/overview/azure/ai-agent-framework)- [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/)
+
+
+
+## Real-World Applications- **Samples**: [GitHub Examples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-agent-framework)- [GitHub Repository](https://github.com/microsoft/agent-framework)
+
+
+
+The tutorials in this workshop demonstrate patterns used in production systems:- [More Samples](../agent-framework/python/samples/)
+
+
+
+- Multi-agent orchestration for complex workflows## 🎯 Real-World Applications
+
+- Azure Document Intelligence integration
+
+- Persistent memory with Mem0---
+
+- Azure Monitor integration for observability
+
+- Log correlation across multiple servicesAfter completing these tutorials, check out the **[Competitive Intelligence Project](https://github.com/gkoneru/microsoft-agent-framework-samples)** for a production example using:
+
+- Cost optimization and performance monitoring
 
 - Multi-agent workflows**Ready to start?** Open `01_basic_agent.ipynb` and begin your journey! 🚀
 
-- Azure Document Intelligence
-- Microsoft Fabric integration
-- Mem0 persistent memory
+## Contributing
 
-## 🤝 Contributing
+- Azure Document Intelligence
+
+Contributions welcome! Please:- Microsoft Fabric integration
+
+1. Fork the repository- Mem0 persistent memory
+
+2. Create a feature branch
+
+3. Add your tutorial or improvements## 🤝 Contributing
+
+4. Submit a pull request
 
 Contributions welcome! Please:
-1. Fork the repository
+
+## License1. Fork the repository
+
 2. Create a feature branch
-3. Add your tutorial or improvements
+
+MIT License - See LICENSE file for details3. Add your tutorial or improvements
+
 4. Submit a pull request
+
+## Related Projects
 
 ## 📝 License
 
-MIT License - See LICENSE file for details
+- [Azure AI Samples](https://github.com/Azure-Samples/azure-ai-samples) - Official Azure AI examples
 
-## 🔗 Related Projects
+- [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python) - Azure SDK repositoryMIT License - See LICENSE file for details
 
-- **[Competitive Intelligence Agent](https://github.com/gkoneru/microsoft-agent-framework-samples)** - Production multi-agent system for pricing analysis
-- **[Azure AI Samples](https://github.com/Azure-Samples/azure-ai-samples)** - Official Azure AI examples
+
+
+---## 🔗 Related Projects
+
+
+
+**Last Updated**: October 2025  - **[Competitive Intelligence Agent](https://github.com/gkoneru/microsoft-agent-framework-samples)** - Production multi-agent system for pricing analysis
+
+**Repository**: https://github.com/gokoner/microsoft-agent-framework-workshop- **[Azure AI Samples](https://github.com/Azure-Samples/azure-ai-samples)** - Official Azure AI examples
+
 
 ---
 
