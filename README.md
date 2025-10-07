@@ -25,6 +25,48 @@ Comprehensive hands-on workshop for building AI agents using Microsoft's Agent F
 
 **Total Learning Time**: ~7 hours
 
+## To Be Delivered (TBD)
+
+### Enterprise MCP Server Pattern
+
+Advanced enterprise integration pattern demonstrating Model Context Protocol (MCP) server architecture with Azure services:
+
+**Components:**
+1. **FastMCP Server Implementation**
+   - Create MCP server using fastmcp framework
+   - Implement custom tools and capabilities
+   - Deploy as Azure Container App for scalability
+
+2. **Logic App MCP Integration**
+   - Create Azure Logic App workflow
+   - Register Logic App as MCP server in Azure API Center
+   - Enable serverless workflow orchestration
+
+3. **API Management (APIM) Gateway**
+   - Connect both MCP servers to Azure APIM
+   - Apply enterprise policies (rate limiting, authentication, logging)
+   - Centralized API governance and monitoring
+
+4. **AI Agent Workflow**
+   - Build AI agent consuming both MCP servers as tools
+   - Demonstrate enterprise workflow patterns
+   - Show multi-service orchestration with governance
+
+**Learning Objectives:**
+- MCP server development and deployment
+- Azure Container Apps for microservices
+- Logic Apps as serverless MCP endpoints
+- API Center for service registration
+- APIM policies for enterprise security
+- Multi-MCP agent orchestration
+
+**Enterprise Benefits:**
+- Centralized governance and monitoring
+- Policy-based security and rate limiting
+- Scalable container-based deployment
+- Serverless workflow integration
+- Production-ready enterprise patterns
+
 ## Getting Started
 
 ### Prerequisites
