@@ -53,7 +53,7 @@ Each notebook builds on the previous one, introducing new concepts while enhanci
 | 13 | [Pricing Competitive Intelligence](./13_Pricing-Competitive-Intelligence-multiagent.ipynb) | Multi-agent pricing analysis | 45 min |
 | 14 | [Unified WebApp Monitoring](./14_unified_webapp_agent_monitoring.ipynb) | Production monitoring, dashboards | 35 min |
 
-#### **Level 5: Enterprise MCP Server Pattern** (Notebooks 15-19)
+#### **Level 5: Enterprise MCP Server Pattern** (Notebooks 15-20)
 
 | # | Tutorial | Topics Covered | Duration |
 |---|----------|----------------|----------|
@@ -62,8 +62,9 @@ Each notebook builds on the previous one, introducing new concepts while enhanci
 | 17 | [Logic Apps MCP Server](./17_logic_app_mcp_server.ipynb) | No-code MCP tools, Azure API Center | 50 min |
 | 18 | [API Management Integration](./18_apim_mcp_integration.ipynb) | Enterprise gateway, security policies | 45 min |
 | 19 | [Orchestrating Agent with MCP](./19_orchestrating_agent_with_mcp.ipynb) | Multi-server workflows, production patterns | 60 min |
+| 20 | [Multi-User MCP with APIM OAuth](./20_DESIGN.md) | APIM Credential Manager, user-delegated auth, RLS, RBAC | 75 min |
 
-**Total Learning Time**: ~11 hours
+**Total Learning Time**: ~12 hours
 
 
 
