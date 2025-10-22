@@ -91,46 +91,79 @@ The **Enterprise MCP Server Pattern** (Tutorials 15-19) teaches you how to build
 ### Prerequisites
 
 - Python 3.11+
-- Azure subscription (for Azure AI Foundry tutorials)
-- OpenAI API key or Azure OpenAI endpoint
+- Azure subscription with Azure OpenAI service
+- Azure OpenAI deployment (gpt-4, gpt-4o, or gpt-35-turbo)
 
 ### Setup
 
-1. **Install the framework:**
+#### Option 1: Using venv (Standard Python)
+
+1. **Clone the repository:**
 
    ```bash
-   pip install agent-framework
+   git clone https://github.com/gokoner/microsoft-agent-framework-workshop.git
+   cd microsoft-agent-framework-workshop
    ```
 
-2. **Set up your API keys** (create `.env` file):
+2. **Create and activate virtual environment:**
 
    ```bash
-   OPENAI_API_KEY=sk-...
-   OPENAI_CHAT_MODEL_ID=gpt-4
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Clone and setup the repository:**
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+#### Option 2: Using uv (Faster Package Manager)
+
+1. **Install uv** (if not already installed):
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. **Clone and setup:**
 
    ```bash
    git clone https://github.com/gokoner/microsoft-agent-framework-workshop.git
    cd microsoft-agent-framework-workshop
    
-   # Create virtual environment
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   
-   # Install dependencies
-   pip install azure-ai-agent-framework python-dotenv
-   
-   # Copy environment template
-   cp .env.example .env  # Edit with your API keys
+   # Create virtual environment and install dependencies
+   uv venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   uv pip install -r requirements.txt
    ```
 
-4. **Start with Notebook 01:**
+### Configure Azure OpenAI
 
-   ```bash
-   jupyter notebook 01_basic_agent.ipynb
-   ```
+Create a `.env` file with your Azure OpenAI credentials:
+
+```bash
+# Azure OpenAI Configuration
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+AZURE_OPENAI_API_KEY=your-api-key-here
+MODEL_DEPLOYMENT_NAME=gpt-4  # or gpt-4o, gpt-35-turbo
+
+# Optional: Azure AI Foundry (for Tutorials 01b, 10-14)
+AZURE_AI_PROJECT_CONNECTION_STRING=your-project-connection-string
+```
+
+**How to get these values:**
+
+- **Endpoint & API Key**: [Azure Portal](https://portal.azure.com) → Azure OpenAI → Keys and Endpoint
+- **Deployment Name**: Azure OpenAI Studio → Deployments → Your deployment name
+
+### Start Learning
+
+Open the first tutorial:
+
+```bash
+jupyter notebook 01_basic_agent.ipynb
+```
 
 ## 📖 What You'll Build
 
@@ -154,7 +187,7 @@ By the end, you'll have a production-ready Travel Assistant that can:
 - **Runnable Code**: Every cell is executable and well-documented
 - **Best Practices**: Learn the right patterns from the start
 
-##  Additional Resources
+## Additional Resources
 
 - [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/)
 - [GitHub Repository](https://github.com/microsoft/agent-framework)
