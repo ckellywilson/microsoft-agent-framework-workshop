@@ -1,3 +1,4 @@
+
 """
 Travel Booking MCP Server
 A FastMCP server that provides travel-related tools for AI agents
@@ -229,9 +230,9 @@ def get_server_info() -> dict:
     """Get information about this MCP server"""
     return _get_server_info()
 
-# Create ASGI app for uvicorn deployment
+# ASGI app for uvicorn (used in container deployment - Tutorial 16)
 app = mcp.http_app()
 
 if __name__ == "__main__":
-    # Run the server
+    # Run the server locally via stdio transport
     mcp.run()
