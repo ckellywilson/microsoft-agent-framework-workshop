@@ -60,3 +60,9 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+
+# Generated deployment files (Tutorial 16)
+Dockerfile
+deploy_to_azure.sh
+configure_scaling.sh
+update_env_vars.sh

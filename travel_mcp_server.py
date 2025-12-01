@@ -1,4 +1,3 @@
-
 """
 Travel Booking MCP Server
 A FastMCP server that provides travel-related tools for AI agents
@@ -229,6 +228,9 @@ def convert_currency(
 def get_server_info() -> dict:
     """Get information about this MCP server"""
     return _get_server_info()
+
+# Create ASGI app for uvicorn deployment
+app = mcp.http_app()
 
 if __name__ == "__main__":
     # Run the server

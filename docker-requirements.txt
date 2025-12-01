@@ -1,0 +1,6 @@
+# Docker container dependencies for MCP server
+fastmcp
+pydantic
+uvicorn[standard]
+httpx
+python-dotenv
