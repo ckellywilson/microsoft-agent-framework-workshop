@@ -43,9 +43,7 @@ Each notebook builds on the previous one, introducing new concepts while enhanci
 | # | Tutorial | Topics Covered | Duration |
 |---|----------|----------------|----------|
 | 10 | [Azure File Search](./10_azure_file_search_demo.ipynb) | Vector search, RAG patterns | 35 min |
-| 11 | [DevUI & Competitive Intelligence](./11_devui_competitive_intelligence.ipynb) | Development UI, real-world workflows | 40 min |
 | 12 | [Azure Monitor Alerts](./12_azure_monitor_alerts.ipynb) | Monitoring, alerting, observability | 30 min |
-| 13 | [Pricing Competitive Intelligence](./13_Pricing-Competitive-Intelligence-multiagent.ipynb) | Multi-agent pricing analysis | 45 min |
 | 14 | [Unified WebApp Monitoring](./14_unified_webapp_agent_monitoring.ipynb) | Production monitoring, dashboards | 35 min |
 
 #### **Level 5: Enterprise MCP Server Pattern** (Notebooks 15-20)
@@ -56,11 +54,12 @@ Each notebook builds on the previous one, introducing new concepts while enhanci
 | 16 | [Deploy FastMCP to Azure](./16_deploy_fastmcp_to_aca.ipynb) | Docker, Azure Container Apps, hosted MCP tools | 60 min |
 | 17 | [Logic Apps MCP Server](./17_logic_app_mcp_server.ipynb) | No-code MCP tools, Azure API Center | 50 min |
 | 18 | [API Management Integration](./18_apim_mcp_integration.ipynb) | Enterprise gateway, security policies | 45 min |
-| 19 | [Orchestrating Agent with MCP](./19_orchestrating_agent_with_mcp.ipynb) | Multi-server workflows, production patterns | 60 min |
+| 19 | [MCP Authentication & Security](./19_orchestrating_agent_with_mcp.ipynb) | Entra ID auth, APIM security, observability | 60 min |
 | 20 | [Multi-User MCP with APIM OAuth](./20_DESIGN.md) | APIM Credential Manager, user-delegated auth, RLS, RBAC | 75 min |
 
-**Total Learning Time**: ~12 hours
-#### 16,17,18,19,20 are WIP
+**Total Learning Time**: ~10 hours
+
+> **Note**: Tutorials 16-20 are work in progress
 
 
 
@@ -184,19 +183,10 @@ By the end, you'll have a production-ready Travel Assistant that can:
 
 ## Additional Resources
 
-- [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/)
-- [GitHub Repository](https://github.com/microsoft/agent-framework)
-- [Azure AI Agent Framework](https://learn.microsoft.com/azure/ai-services/agents/)
-- [Python SDK Reference](https://learn.microsoft.com/python/api/overview/azure/ai-agent-framework)
-
-## 🎯 Real-World Applications
-
-After completing these tutorials, check out the **[Competitive Intelligence Project](https://github.com/gkoneru/microsoft-agent-framework-samples)** for a production example using:
-
-- Multi-agent workflows
-- Azure Document Intelligence
-- Microsoft Fabric integration
-- Mem0 persistent memory
+- [Azure AI Agent Service Documentation](https://learn.microsoft.com/azure/ai-services/agents/)
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
+- [Azure API Management](https://learn.microsoft.com/azure/api-management/)
+- [Microsoft Entra ID Authentication](https://learn.microsoft.com/entra/identity-platform/)
 
 ---
 
@@ -215,12 +205,7 @@ Contributions welcome! Please:
 
 MIT License - See LICENSE file for details
 
-## 🔗 Related Projects
-
-- **[Competitive Intelligence Agent](https://github.com/gkoneru/microsoft-agent-framework-samples)** - Production multi-agent system for pricing analysis
-- **[Azure AI Samples](https://github.com/Azure-Samples/azure-ai-samples)** - Official Azure AI examples
-
 ---
 
-**Last Updated**: October 2025  
+**Last Updated**: December 2025  
 **Maintained by**: Community Contributors
