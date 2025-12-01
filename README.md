@@ -10,11 +10,6 @@ This tutorial series teaches you Microsoft Agent Framework by building a **Perso
 
 Each notebook builds on the previous one, introducing new concepts while enhancing our Travel Assistant.
 
-### Getting Started
-
-1. **[START_HERE.md](./START_HERE.md)** - Setup guide and prerequisites
-2. **[QUICKSTART.md](./QUICKSTART.md)** - Quick 5-minute agent
-3. **[LEARNING_PATH.md](./LEARNING_PATH.md)** - Structured curriculum
 
 ### Tutorial Series
 
