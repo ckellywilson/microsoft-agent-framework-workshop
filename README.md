@@ -90,7 +90,70 @@ The **Enterprise MCP Server Pattern** (Tutorials 15-19) teaches you how to build
 
 ### Setup
 
-#### Option 1: Using venv (Standard Python)
+#### Option 1: Using Dev Container (Recommended)
+
+The easiest way to get started is using the pre-configured dev container, which includes all tools and dependencies.
+
+**Requirements:**
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows/Mac/Linux)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+**Installing Docker Desktop:**
+
+- **Windows**: 
+  1. Download [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop)
+  2. Run the installer and follow the setup wizard
+  3. Docker Desktop will use WSL 2 by default (recommended)
+  4. If WSL 2 is not installed, Docker will prompt you to install it:
+     - Open PowerShell as Administrator and run:
+       ```powershell
+       wsl --install
+       ```
+     - Restart your computer when prompted
+     - Set WSL 2 as default: `wsl --set-default-version 2`
+  5. Start Docker Desktop from the Start menu
+
+- **Mac**:
+  1. Download [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop) (choose Apple Silicon or Intel chip)
+  2. Open the `.dmg` file and drag Docker to Applications
+  3. Launch Docker from Applications folder
+
+- **Linux**:
+  1. Follow the [official installation guide](https://docs.docker.com/desktop/install/linux-install/) for your distribution
+  2. Or install Docker Engine: [Ubuntu](https://docs.docker.com/engine/install/ubuntu/), [Debian](https://docs.docker.com/engine/install/debian/), [Fedora](https://docs.docker.com/engine/install/fedora/)
+
+**Steps:**
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/gokoner/microsoft-agent-framework-workshop.git
+   cd microsoft-agent-framework-workshop
+   ```
+
+2. **Open in VS Code:**
+
+   ```bash
+   code .
+   ```
+
+3. **Reopen in Container:**
+   - **Windows**: Press `F1` → Type "Dev Containers: Reopen in Container" → Press Enter
+   - **Mac/Linux**: Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Linux) → Type "Dev Containers: Reopen in Container" → Press Enter
+   
+   Alternatively, when VS Code detects the dev container configuration, click **"Reopen in Container"** in the notification popup.
+
+4. **Wait for container to build** (first time only, ~2-5 minutes)
+
+5. **The environment is ready!** All dependencies are pre-installed including:
+   - Python 3.12 with pip packages
+   - Node.js and npm
+   - Azure CLI
+   - GitHub CLI
+   - Jupyter notebooks support
+
+#### Option 2: Using venv (Standard Python)
 
 1. **Clone the repository:**
 
@@ -101,9 +164,16 @@ The **Enterprise MCP Server Pattern** (Tutorials 15-19) teaches you how to build
 
 2. **Create and activate virtual environment:**
 
+   **Windows:**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
+   ```
+
+   **Mac/Linux:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
    ```
 
 3. **Install dependencies:**
@@ -112,10 +182,16 @@ The **Enterprise MCP Server Pattern** (Tutorials 15-19) teaches you how to build
    pip install -r requirements.txt
    ```
 
-#### Option 2: Using uv (Faster Package Manager)
+#### Option 3: Using uv (Faster Package Manager)
 
 1. **Install uv** (if not already installed):
 
+   **Windows (PowerShell):**
+   ```powershell
+   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+
+   **Mac/Linux:**
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
@@ -128,7 +204,23 @@ The **Enterprise MCP Server Pattern** (Tutorials 15-19) teaches you how to build
    
    # Create virtual environment and install dependencies
    uv venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Activate virtual environment:**
+
+   **Windows:**
+   ```bash
+   .venv\Scripts\activate
+   ```
+
+   **Mac/Linux:**
+   ```bash
+   source .venv/bin/activate
+   ```
+
+4. **Install dependencies:**
+
+   ```bash
    uv pip install -r requirements.txt
    ```
 
